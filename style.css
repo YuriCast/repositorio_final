@@ -1,0 +1,437 @@
+/* Import da Fonte */
+
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@700&family=Poppins:wght@400;500;600&family=Roboto:wght@400;500;700&display=swap");
+
+/* inicio global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(250, 250, 250);
+}
+
+li,
+a,
+button,
+p,
+h1,
+h2,
+h3 {
+  text-decoration: none;
+  font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* fim global */
+
+/* inicio navbar */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15%;
+}
+
+header a {
+  color: rgb(84, 84, 84);
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header-portfolio {
+  padding-left: 20px;
+}
+
+.nav-links {
+  list-style: none;
+}
+
+.nav-links a {
+  color: rgb(84, 84, 84);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.nav-links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav-links li a {
+  transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+  color: rgb(35, 35, 35);
+}
+
+/* fim navbar */
+
+/* Inicio Home */
+
+.home {
+  height: 720px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 22%;
+  place-items: center;
+  padding-bottom: 100px;
+}
+
+.home-esquerda {
+  display: grid;
+  gap: 16px;
+  position: relative;
+}
+
+.home-esquerda h1 {
+  color: rgb(50, 50, 50);
+  font-size: 60px;
+  font-weight: 600;
+}
+
+.home-esquerda span {
+  width: 62px;
+  border: 1px solid rgb(151, 150, 150);
+  position: absolute;
+  margin-top: 124px;
+}
+
+.home-esquerda h2 {
+  color: rgb(75, 75, 75);
+  font-size: 26px;
+  font-weight: 400;
+  margin-left: 72px;
+}
+
+.home-esquerda p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 24px;
+}
+
+.home-esquerda a {
+  color: rgb(250, 250, 250);
+  font-weight: 500;
+  font-size: 18px;
+  background-color: rgb(50, 50, 50);
+  padding: 16px;
+  border-radius: 26px;
+  max-width: 180px;
+  text-align: center;
+}
+
+.home-esquerda a {
+  transition: all 0.3s ease 0s;
+}
+
+.home-esquerda a:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+/* Fim Home */
+
+/* Inicio About */
+
+.titulo-about {
+  text-align: center;
+}
+
+.titulo-about h1 {
+  color: rgb(50, 50, 50);
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.titulo-about p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.about-lados {
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 0px 22%;
+  margin-bottom: 180px;
+  place-items: center;
+}
+
+.about-direita {
+  display: grid;
+  gap: 12px;
+}
+
+.about-direita h3 {
+  color: rgb(50, 50, 50);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.about-direita p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* Fim About */
+
+.schedule {
+  padding: 0px 22%;
+}
+
+.schedule p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.schedule h3 {
+  color: rgb(50, 50, 50);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.titulo-schedule {
+  text-align: center;
+}
+
+.titulo-schedule h1 {
+  color: rgb(50, 50, 50);
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.example-schedule {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+  margin-bottom: 150px;
+}
+
+.example-schedule p {
+  text-align: justify;
+}
+
+.example-schedule h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Fim Schedule*/
+
+/* Inicio Projecs*/
+
+.galeria-title {
+  margin-bottom: 100px;
+}
+
+.galeria-title h1 {
+  color: rgb(50, 50, 50);
+  font-size: 46px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.galeria-title p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.galeria {
+  grid-column: 1 / -1;
+}
+
+.slide-wrapper {
+  overflow: hidden;
+  grid-column: 1 / -1;
+}
+
+.slide {
+  display: flex;
+}
+
+.slide:hover {
+  will-change: transform;
+}
+
+.slide li {
+  flex-shrink: 0;
+  width: 80vw;
+  max-width: 800px;
+  margin: 0 20px;
+
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+  transform: scale(0.8);
+  transition: 0.4s;
+}
+
+.slide li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.custom-controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  grid-column: 1 / -1;
+  margin-bottom: 10px;
+}
+
+.custom-controls li {
+  opacity: 0.8;
+  transform: scale(0.8);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 2px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+}
+
+.custom-controls li.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Fim Projecs*/
+
+/* Inicio Contact*/
+
+.contact-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 100px;
+  margin-top: 100px;
+}
+
+.contact-container:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background: url("/") no-repeat center;
+  background-size: cover;
+  filter: blur(50px);
+  z-index: -1;
+}
+.contact-box {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
+
+.left {
+  background: url("/") no-repeat center;
+  background-size: cover;
+  height: 100%;
+}
+
+.right {
+  padding: 25px 40px;
+}
+
+.right h2 {
+  color: rgb(50, 50, 50);
+  position: relative;
+  padding: 0 0 10px;
+  margin-bottom: 10px;
+}
+
+.right h2:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 50px;
+  border-radius: 2px;
+  background-color: rgb(50, 50, 50);
+}
+
+.right .field {
+  width: 100%;
+  border: 2px solid rgba(0, 0, 0, 0);
+  outline: none;
+  background-color: rgba(230, 230, 230, 0.6);
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: 0.3s;
+}
+
+.right .field:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+textarea {
+  min-height: 150px;
+}
+
+.right .btn {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: rgb(50, 50, 50);
+  color: #fff;
+  font-size: 1.1rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.right .btn:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+.right .field:focus {
+  border: 2px solid rgba(30, 85, 250, 0.47);
+  background-color: #fff;
+}
+/* Fim Contact*/
+
+/* Inicio Footer*/
+
+.footer {
+  margin-top: 100px;
+  background-color: rgb(222, 222, 222);
+  padding: 70px;
+}
+
+.footer p {
+  background-color: rgb(222, 222, 222);
+  color: rgb(100, 100, 100);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+}
+
+/* Fim Footer*/
