@@ -184,6 +184,55 @@ header a {
 
 /* Fim About */
 
+/* Inicio Disciplines */
+.disciplines {
+  margin-bottom: 300px;
+}
+.titulo-disciplines {
+  text-align: center;
+}
+
+.titulo-disciplines h1 {
+  color: rgb(50, 50, 50);
+  font-size: 46px;
+  font-weight: 600;
+}
+
+.titulo-disciplines p {
+  color: rgb(100, 100, 100);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-top: 70px;
+}
+
+.btn a {
+  color: rgb(250, 250, 250);
+  font-weight: 500;
+  font-size: 18px;
+  background-color: rgb(50, 50, 50);
+  padding: 16px;
+  border-radius: 26px;
+  width: 150px;
+  text-align: center;
+}
+
+.btn a {
+  transition: all 0.3s ease 0s;
+}
+
+.btn a:hover {
+  background-color: rgb(35, 35, 35);
+}
+
+/* Fim Disciplines */
+
 .schedule {
   padding: 0px 22%;
 }
@@ -424,6 +473,15 @@ textarea {
   margin-top: 100px;
   background-color: rgb(222, 222, 222);
   padding: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer div{
+background-color: rgb(222, 222, 222);
 }
 
 .footer p {
@@ -432,6 +490,16 @@ textarea {
   font-size: 20px;
   font-weight: 400;
   text-align: center;
+}
+.footer a {
+  background-color: rgb(50, 50, 50);
+  padding: 10px;
+  border-radius: 6px;
+  color: rgb(250, 250, 250);
+  font-size: 16px;
+  font-weight: 400;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 /* Fim Footer*/
